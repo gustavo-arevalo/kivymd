@@ -6,7 +6,19 @@ NavigationLayout:
     ScreenManager:
         Screen:
             BoxLayout:
+                orientation: "vertical"
                 MDToolbar:
+                    title: app.title
+                    elevation: 10
+                    #left_action_items: [["menu", lambda x: ]]
+                    Button:
+                        text: "Boton 1"
+                    Button:
+                        text: "Boton 2"
+                    Button:
+                        text: "Boton 3"
+                    Button:
+                        text: "Boton 4"
                 ScreenManager:
                     id: screen_manager
                     DashBoard:
@@ -16,3 +28,8 @@ NavigationLayout:
                         id: first_screen
                         name: "first_screen"
     MDNavigationDrawer:
+        id: nav_drawer
+        BoxLayout:
+            orientation: 'vertical'
+            padding: "8dp"
+            spacing: "8dp"
