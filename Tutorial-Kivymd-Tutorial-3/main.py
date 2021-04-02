@@ -15,7 +15,7 @@ class MyApp(MDApp):
     def build(self):
         # Ajustes adicionales
         self.title = "Mi Primera App"
-        self.theme_cls.primary_palette = "Cyan"
+        self.theme_cls.primary_palette = "Green"
         # Carga del archivo kivy
         return Builder.load_file("main.kv")
 
